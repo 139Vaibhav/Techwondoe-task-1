@@ -6,6 +6,7 @@ import '../CSS/NavBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavBar() {
+    let w = window.innerWidth;
     return (
         <div className="navbar-pos">
             <Navbar fixed="top" style={{ height: "90px", backgroundColor: "black" }}>
@@ -14,9 +15,12 @@ function NavBar() {
                         <DragHandleIcon style={{ position: "relative", width: "45px", height: "50px", color: "hsla(0,0%,100%,.4)" }} />
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link className="menu-text-wrapper" style={{ color: "#fff" }}>
+                        {w > 479 ? (<Nav.Link className="menu-text-wrapper" style={{ color: "#fff" }}>
                             MENU
-                        </Nav.Link>
+                        </Nav.Link>) : (
+                            <></>
+                        )}
+
                         <Nav.Link href="#" className="NavBar_text_techwondoe">
                             <img
                                 src="https://uploads-ssl.webflow.com/61151a6979644d46e49e429b/6130c5894de4226268ff5bfe_Techwondo%20Logo%20White.svg"
