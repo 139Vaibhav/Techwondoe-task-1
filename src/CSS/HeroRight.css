@@ -1,0 +1,23 @@
+.heroright {
+    color: #f7f7f7;
+    position: fixed;
+    z-index: 100;
+    right: 2%;
+    transform-origin: bottom right;
+    top: auto;
+    bottom: calc(50vh);
+    transform: rotate(-90deg) translateX(50%);
+}
+
+@media screen and (max-width: 479px) {
+
+    .heroright {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #text-link {
+        text-align: center;
+    }
+}
