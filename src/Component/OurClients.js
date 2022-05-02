@@ -42,11 +42,11 @@ function OurClients() {
                             <>
                                 {w > 479 ? (
                                     <div key={i} className="col-3">
-                                        <img src={imagelink[value]} style={{ maxHeight: "60px" }}></img>
+                                        <img src={imagelink[value]} style={{ maxHeight: "60px" }} alt=""></img>
                                     </div>
                                 ) : (
                                     <div key={i} className="col">
-                                        <img src={imagelink[value]} style={{ maxHeight: "60px" }}></img>
+                                        <img src={imagelink[value]} style={{ maxHeight: "60px" }} alt=""></img>
                                     </div>
                                 )}
 

@@ -6,14 +6,12 @@ function Footer() {
 
     const [imagelink, setImageLink] = useState("");
     const [section, setSection] = useState([]);
-    const [link, setLink] = useState([]);
 
     useEffect(() => {
         client.getEntries({ content_type: 'footer' }).then((res) => {
             console.log("response from footer is", JSON.stringify(res));
             setImageLink(res.items[0].fields.imagelink);
             setSection(res.items[0].fields.sections)
-            setLink(res.items[0].fields.links)
         }).catch(console.error)
     }, [])
 
@@ -35,7 +33,7 @@ function Footer() {
                     <div id="w-node-_389b75b3-1dd5-f548-444c-a9f38edcdc8e-bd2a4008" class="div-block-2">
 
                         {section.map(key => (
-                            <a href="#" className="text-link text-link-margin">
+                            <a href="/#" className="text-link text-link-margin">
                                 {key}
                             </a>
                         ))}

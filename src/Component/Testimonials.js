@@ -9,12 +9,11 @@ import '../CSS/Testimonials.css';
 function Testimonials() {
 
     const [data, setData] = useState([]);
-    const [complete, setComplete] = useState([]);
+
 
     useEffect(() => {
         client.getEntries({ content_type: 'testimonial' }).then((res) => {
             console.log("response is", JSON.stringify(res));
-            setComplete(res);
             let temp_arr = [];
             for (let i = 0; i < res.items.length; i++) {
                 let temp_data = {
@@ -48,7 +47,7 @@ function Testimonials() {
                                         <Row>
                                             <Col xs={3}>
                                                 <div className="text-align-centre-mobile w-col w-col-3">
-                                                    <div style={{ width: "140px", height: "140px", borderRadius: "100%", backgroundPosition: "50% 50%", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}><img src={key['link']} style={{ width: "140px", height: "140px", borderRadius: "100%", backgroundPosition: "50% 50%", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}></img></div>
+                                                    <div style={{ width: "140px", height: "140px", borderRadius: "100%", backgroundPosition: "50% 50%", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}><img src={key['link']} style={{ width: "140px", height: "140px", borderRadius: "100%", backgroundPosition: "50% 50%", backgroundSize: "cover", backgroundRepeat: "no-repeat" }} alt=""></img></div>
                                                 </div>
                                             </Col>
                                             <Col>
@@ -64,7 +63,7 @@ function Testimonials() {
                                                 <div className="testimonials-text text-align-centre-mobile">
                                                     {key['desc']}
                                                 </div>
-                                                <a href="#" className="button w-button" style={{ padding: "15px 30px 14px", borderRadius: "5px", float: "left" }}>{key['btn']}</a>
+                                                <a href="/#" className="button w-button" style={{ padding: "15px 30px 14px", borderRadius: "5px", float: "left" }}>{key['btn']}</a>
                                             </Col>
                                         </Row>
                                     </Container>

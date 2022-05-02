@@ -46,7 +46,7 @@ function Blog() {
                             return (
                                 <div className='w-dyn-item'>
                                     <div>
-                                        <img src={key['imagelink']} className='blog-image w-inline-block'></img>
+                                        <img src={key['imagelink']} className='blog-image w-inline-block' alt=""></img>
                                         <div className='blog-content'>
                                             <div className='card-meta-content'>
                                                 <a href="/blog-category/culture" className="category-tag">{key['btn']}</a>
@@ -56,7 +56,7 @@ function Blog() {
                                             <p className='paragraph-5' style={{ textAlign: "left" }}>
                                                 {key['text']}
                                             </p>
-                                            <a href="#" className="link text-link-red">{key['readmore']}</a>
+                                            <a href="/#" className="link text-link-red">{key['readmore']}</a>
                                         </div>
                                     </div>
                                 </div>

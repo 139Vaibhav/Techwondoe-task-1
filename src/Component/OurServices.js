@@ -46,7 +46,7 @@ function OurServices() {
                         </div>
                     </Col>
                     <Col>
-                        <img id="w-node-_1fa41dc1-9865-90aa-e0f7-538e937b1879-059e42a0" className="image-4" loading="lazy" src="https://uploads-ssl.webflow.com/61151a6979644d46e49e429b/621162234072ac802d22e005_techwondoe-website.gif">
+                        <img id="w-node-_1fa41dc1-9865-90aa-e0f7-538e937b1879-059e42a0" className="image-4" loading="lazy" src="https://uploads-ssl.webflow.com/61151a6979644d46e49e429b/621162234072ac802d22e005_techwondoe-website.gif" alt=''>
                         </img>
                     </Col>
                 </Row>
