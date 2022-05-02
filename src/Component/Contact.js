@@ -13,7 +13,7 @@ function Contact() {
 
     useEffect(() => {
         client.getEntries({ content_type: 'contact' }).then((res) => {
-            console.log("response is", JSON.stringify(res));
+            // console.log("response is", JSON.stringify(res));
             setTitle(res.items[0].fields.title)
             setBtn(res.items[0].fields.btn)
             setContent(res.items[0].fields.list)

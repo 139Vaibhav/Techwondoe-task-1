@@ -14,7 +14,7 @@ function OurServices() {
 
     useEffect(() => {
         client.getEntries({ content_type: 'ourServices' }).then((res) => {
-            console.log("response is", JSON.stringify(res));
+            // console.log("response is", JSON.stringify(res));
             setSubTitle(res.items[0].fields.subtitle);
             setTitle(res.items[0].fields.title)
             setBtn(res.items[0].fields.btn)

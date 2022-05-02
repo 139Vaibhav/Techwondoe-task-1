@@ -11,7 +11,7 @@ function LandingPage() {
 
     useEffect(() => {
         client.getEntries({ content_type: 'landingPage' }).then((res) => {
-            console.log("response is", JSON.stringify(res));
+            // console.log("response is", JSON.stringify(res));
             setSubTitle(res.items[0].fields.subtitle);
             setTitle(res.items[0].fields.title)
             setBtn1(res.items[0].fields.btn1)

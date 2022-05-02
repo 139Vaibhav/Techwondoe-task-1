@@ -12,7 +12,7 @@ function WhyUs() {
 
     useEffect(() => {
         client.getEntries({ content_type: 'whyUs' }).then((res) => {
-            console.log("response is", JSON.stringify(res));
+            // console.log("response is", JSON.stringify(res));
             let data = res.items;
             let arr_title = [];
             let arr_content = [];
@@ -25,7 +25,7 @@ function WhyUs() {
             }
             setContent(arr_content);
             setTitle(arr_title);
-            console.log(arr_content);
+            // console.log(arr_content);
         }).catch(console.error)
     }, [])
 

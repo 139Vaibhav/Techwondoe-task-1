@@ -9,7 +9,7 @@ function OurClients() {
 
     useEffect(() => {
         client.getEntries({ content_type: 'ourClients' }).then((res) => {
-            console.log("response is", JSON.stringify(res));
+            // console.log("response is", JSON.stringify(res));
             setImageLink(res.items[0].fields['imagelink'])
             setTitle(res.items[0].fields['title'])
         }).catch(console.error)

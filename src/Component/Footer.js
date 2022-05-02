@@ -9,7 +9,7 @@ function Footer() {
 
     useEffect(() => {
         client.getEntries({ content_type: 'footer' }).then((res) => {
-            console.log("response from footer is", JSON.stringify(res));
+            // console.log("response from footer is", JSON.stringify(res));
             setImageLink(res.items[0].fields.imagelink);
             setSection(res.items[0].fields.sections)
         }).catch(console.error)

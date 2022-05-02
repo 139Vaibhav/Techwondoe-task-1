@@ -8,7 +8,7 @@ function Blog() {
 
     useEffect(() => {
         client.getEntries({ content_type: 'blog' }).then((res) => {
-            console.log("response is", JSON.stringify(res));
+            // console.log("response is", JSON.stringify(res));
             let temp_arr = [];
             for (let i = 0; i < res.items.length; i++) {
                 let temp_data = {
