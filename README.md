@@ -7,12 +7,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 I have built a React page of Techwondoe (https://www.techwondoe.com/)  (home page only) where all the content (text and images) is coming from a headless CMS of my choice (I have used Contentful).
 
 ### Checklist
-[x] = Deployed site : (https://vaibhav-techwondoe-task1.netlify.app/)
-[x] = Built the homepage of techwondoe (https://www.techwondoe.com/) in ReactJS
-[x] = Each section is a separate component
-[x] = All the data (text and image links) is fetched from headless CMS (Contentful) in this case
-[x] = Page is mobile responsive
-[x] = Updated the readme for running the program
+- [x] = Deployed site : (https://vaibhav-techwondoe-task1.netlify.app/)
+- [x] = Built the homepage of techwondoe (https://www.techwondoe.com/) in ReactJS
+- [x] = Each section is a separate component
+- [x] = All the data (text and image links) is fetched from headless CMS (Contentful) in this case
+- [x] = Page is mobile responsive
+- [x] = Updated the readme for running the program
 
 ## Available Scripts
 
